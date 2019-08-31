@@ -1,0 +1,17 @@
+
+form_tag: allows us to automatically generate HTML form code and integrate data to both auto fill the values as well as have the form submit data that 
+   the controller can use to either create or update a record in the database.
+
+   Passes in:
+      1. the route where the parameters for the form will be sent
+      2. the http method that the form will utilize
+      3. the attributes for each field
+
+   
+Best practices:
+Use form_for when your form is directly connected to a model. 
+Extending our example from the introduction, this would be our Hamster's profile edit form that 
+connects to the profile database table. This is the most common case when form_for is used
+
+Use form_tag when you simply need an HTML form generated. 
+Examples of this would be: a search form field or a contact form
